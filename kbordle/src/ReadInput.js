@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ReadFile from './ReadFile';
 
 
 // class ReadInputComponent extends React.Component {
@@ -34,7 +35,7 @@ import React, { useState } from 'react'
 
 // export default ReadInputComponent;
 
-function ReadInput() {
+export default function ReadInput() {
 
     const [input, setInput] = useState("");
 
@@ -51,6 +52,9 @@ function ReadInput() {
             console.log(input);
     }
 
+    console.log(ReadFile());
+    
+
     return (
         <div>
             <input value={input} onChange={onChangeText} onKeyDown={onEnterpress}></input>
@@ -60,5 +64,3 @@ function ReadInput() {
     )
     
 }
-
-export default ReadInput;
