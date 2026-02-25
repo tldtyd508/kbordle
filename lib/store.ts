@@ -37,9 +37,10 @@ export const useGameStore = create<GameState>((set, get) => ({
 
       set({ isDataLoading: true, error: null });
       try {
+        const timestamp = new Date().getTime();
         const [playerResponse, sequenceResponse] = await Promise.all([
-          fetch('/players_2026.json'),
-          fetch('/daily_sequence.json')
+          fetch(`/players_2026.json?v=${timestamp}`),
+          fetch(`/daily_sequence.json?v=${timestamp}`)
         ]);
 
         if (!playerResponse.ok) throw new Error('선수 명단 로딩 실패');
