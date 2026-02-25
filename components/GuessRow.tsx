@@ -34,10 +34,10 @@ const GuessRow = ({ guess }: GuessRowProps) => {
     <TableRow className="bg-card">
       <TableCell className="font-medium">{guess.name}</TableCell>
       <TableCell><ResultBadge status={result.team}>{guess.team}</ResultBadge></TableCell>
-      <TableCell><ResultBadge status={result.position}>{guess.positionDetail}</ResultBadge></TableCell>
+      <TableCell><ResultBadge status={result.position}>{guess.positionGroup}</ResultBadge></TableCell>
       <TableCell><ResultBadge status={result.throws}>{guess.throws}</ResultBadge></TableCell>
       <TableCell><ResultBadge status={result.bats}>{guess.bats}</ResultBadge></TableCell>
-      
+
       <TableCell><DirectionBadge direction={result.age}>만 {calcAge(guess.birthDate)}세</DirectionBadge></TableCell>
       <TableCell><DirectionBadge direction={result.jerseyNumber}>{guess.jerseyNumber}</DirectionBadge></TableCell>
     </TableRow>
