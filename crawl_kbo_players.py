@@ -71,7 +71,7 @@ def get_player_details(driver, url_path):
             throws_map = {"우": "R", "좌": "L", "언": "R"}
             bats_map = {"우": "R", '좌': "L", "양": "S"}
             throws = throws_map.get(hand_info[0], '')
-            bats = bats_map.get(hand_info[-1], '')
+            bats = bats_map.get(hand_info[2], '') if len(hand_info) >= 3 else ''
 
         date_str = info_dict.get('생년월일', '')
         date_str = date_str.replace('년', '-').replace('월', '-').replace('일', '').replace('.', '-').replace(' ','').strip()
