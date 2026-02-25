@@ -3,7 +3,7 @@ import json
 import random
 
 def generate_daily_sequence():
-    json_path = 'public/players_2025.json'
+    json_path = 'public/players_2026.json'
     output_path = 'public/daily_sequence.json'
 
     try:

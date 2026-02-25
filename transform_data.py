@@ -3,8 +3,8 @@ import re
 
 def transform_data():
     # 백업 파일을 원본으로 사용
-    input_path = 'public/players_2025.json.bak' 
-    output_path = 'public/players_2025.json'
+    input_path = 'public/players_2026.json.bak' 
+    output_path = 'public/players_2026.json'
 
     try:
         with open(input_path, 'r', encoding='utf-8') as f:

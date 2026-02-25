@@ -38,7 +38,7 @@ export const useGameStore = create<GameState>((set, get) => ({
       set({ isDataLoading: true, error: null });
       try {
         const [playerResponse, sequenceResponse] = await Promise.all([
-          fetch('/players_2025.json'),
+          fetch('/players_2026.json'),
           fetch('/daily_sequence.json')
         ]);
 

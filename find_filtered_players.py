@@ -2,8 +2,8 @@
 import json
 
 def find_filtered_players():
-    backup_path = 'public/players_2025.json.bak'
-    current_path = 'public/players_2025.json'
+    backup_path = 'public/players_2026.json.bak'
+    current_path = 'public/players_2026.json'
 
     try:
         with open(backup_path, 'r', encoding='utf-8') as f:

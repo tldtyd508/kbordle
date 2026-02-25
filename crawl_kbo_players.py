@@ -171,7 +171,7 @@ def crawl_kbo_players():
                 all_player_data.append(details)
             time.sleep(0.05)
 
-        with open('public/players_2025.json', 'w', encoding='utf-8') as f:
+        with open('public/players_2026.json', 'w', encoding='utf-8') as f:
             json.dump(all_player_data, f, ensure_ascii=False, indent=4)
 
         print(f"\n--- 최종 완료: 총 {len(all_player_data)}명의 선수 데이터를 필터링하여 저장했습니다. ---")

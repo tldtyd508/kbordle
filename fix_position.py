@@ -2,7 +2,7 @@ import json
 import re
 
 def fix_position_parsing():
-    filepath = 'public/players_2025.json'
+    filepath = 'public/players_2026.json'
 
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
